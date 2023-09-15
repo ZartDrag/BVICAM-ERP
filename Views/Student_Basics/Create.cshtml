@@ -1,0 +1,98 @@
+﻿@model ERP_Latest.Models.Student_Basics
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Student_Basics</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StudentId" class="control-label"></label>
+                <input asp-for="StudentId" class="form-control" />
+                <span asp-validation-for="StudentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentName" class="control-label"></label>
+                <input asp-for="StudentName" class="form-control" />
+                <span asp-validation-for="StudentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CetType" class="control-label"></label>
+                <input asp-for="CetType" class="form-control" />
+                <span asp-validation-for="CetType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CetNo" class="control-label"></label>
+                <input asp-for="CetNo" class="form-control" />
+                <span asp-validation-for="CetNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnrollNo" class="control-label"></label>
+                <input asp-for="EnrollNo" class="form-control" />
+                <span asp-validation-for="EnrollNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentMobile" class="control-label"></label>
+                <input asp-for="StudentMobile" class="form-control" />
+                <span asp-validation-for="StudentMobile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentEmail" class="control-label"></label>
+                <input asp-for="StudentEmail" class="form-control" />
+                <span asp-validation-for="StudentEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentToken" class="control-label"></label>
+                <input asp-for="StudentToken" class="form-control" />
+                <span asp-validation-for="StudentToken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsVerified" class="control-label"></label>
+                <input asp-for="IsVerified" class="form-control" />
+                <span asp-validation-for="IsVerified" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsWithdraw" class="control-label"></label>
+                <input asp-for="IsWithdraw" class="form-control" />
+                <span asp-validation-for="IsWithdraw" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WithdrawDate" class="control-label"></label>
+                <input asp-for="WithdrawDate" class="form-control" />
+                <span asp-validation-for="WithdrawDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WithdrawReason" class="control-label"></label>
+                <input asp-for="WithdrawReason" class="form-control" />
+                <span asp-validation-for="WithdrawReason" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedAt" class="control-label"></label>
+                <input asp-for="CreatedAt" class="form-control" />
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdatedAt" class="control-label"></label>
+                <input asp-for="UpdatedAt" class="form-control" />
+                <span asp-validation-for="UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

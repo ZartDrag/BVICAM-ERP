@@ -1,0 +1,185 @@
+﻿@model IEnumerable<ERP_Latest.Models.Student_Details>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentDob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentAlternateEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentAlternateMobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentFatherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentMotherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentPermanentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentCurrentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentFatherMobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentMotherMobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentBloodGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentPhoto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentCetRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentPreviousSchoolDetails)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentCommunity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentProgramme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentBatch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentShift)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentIsMgmt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentIsOutDelhi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentCetType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MentorId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentDob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentAlternateEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentAlternateMobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentFatherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentMotherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentPermanentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentCurrentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentFatherMobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentMotherMobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentBloodGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentPhoto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentCetRank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentPreviousSchoolDetails)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentCommunity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentProgramme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentBatch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentShift)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentIsMgmt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentIsOutDelhi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentCetType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MentorId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudentDetailId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudentDetailId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudentDetailId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
